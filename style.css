@@ -43,7 +43,7 @@ nav {
   z-index: 100;
 }
 
-.logo {
+.Logo {
   width: 120px;
   flex-shrink: 0;
 }
@@ -489,7 +489,7 @@ nav ul.active {
   display: flex;          /* ✅ hamburger click pe show */
 }
 
-  .logo {
+  .Logo {
     width: 90px; /* ✅ smaller logo */
   }
 
@@ -576,3 +576,4 @@ nav ul.active {
     box-sizing: border-box;
   }
 }
+
