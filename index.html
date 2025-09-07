@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Lottie Script -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <!-- Animate on Scroll Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <!-- ===== Header / Navbar ===== -->
+<header id="header">
+  <div class="container">
+    <nav>
+      <img src="images/logo.png" class="logo" alt="Logo">
+      <span class="menu-toggle">&#9776;</span>
+      <ul id="nav-links">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO FLEX SECTION -->
+    <div class="hero-section">
+      
+      <!-- Left: Text -->
+      <div class="header-text" data-aos="fade-up">
+        <p>Data Analyst</p>
+        <h1>Hi, I'm <span>Samman Mumtaz</span></h1>
+        <h2>Data Visualization Engineer</h2>
+      </div>
+
+      <!-- Right: Animation -->
+      <div class="sphere-background">
+        <div class="tagcloud"></div>
+        <lottie-player 
+          src="https://assets10.lottiefiles.com/packages/lf20_jcikwtux.json"
+          background="transparent"
+          speed="1"
+          style="width: 300px; height: 300px;"
+          loop autoplay>
+        </lottie-player>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- ===== About Section ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="row about-row">
+        <div class="about-col-1" data-aos="fade-right">
+          <img src="images/user.jpg" alt="Samman">
+        </div>
+        <div class="about-col-2" data-aos="fade-left">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            Are you drowning in data but lacking clear insights? Hi, I'm Samman Mumtaz. 
+            A Data Analyst with expertise in SQL queries, Excel (Pivot Tables, Charts, Formulas), 
+            Power BI, and Google Sheets, I design clean, interactive, and result-focused dashboards 
+            tailored to your goals. With a year of experience, I create professional Excel KPI 
+            dashboards and Power BI dashboards using pivot tables, slicers, and dynamic charts.
+          </p>
+
+          <div class="tab-titles">
+            <span class="tab-links active-link" onclick="opentab('skills')">Skills</span>
+            <span class="tab-links" onclick="opentab('experience')">Experience</span>
+            <span class="tab-links" onclick="opentab('education')">Education</span>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Data Visualization</span><br>Power BI, Excel, Google Data Studio dashboards</li>
+              <li><span>SQL & Databases</span><br>Efficient queries for data extraction & cleaning</li>
+              <li><span>Data Analysis</span><br>Identifying KPIs & trends for decision-making</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Freelance Data Analyst</span><br>Excel KPI dashboards & Power BI reports</li>
+              <li><span>Intern – Business Intelligence</span><br>Data models, cleaning & reports</li>
+              <li><span>Project Work</span><br>End-to-end analysis during coursework</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>BS in Computer Science</span><br>University of Sargodha</li>
+              <li><span>Google Data Analytics Certificate</span><br>Coursera</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Services Section ===== -->
+  <section id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div data-aos="zoom-in">
+          <h2>Data Cleaning & Preparation</h2>
+          <p>Transform messy data into reliable datasets.</p>
+        </div>
+        <div data-aos="zoom-in" data-aos-delay="200">
+          <h2>Interactive Dashboards</h2>
+          <p>Build dynamic dashboards in Power BI & Excel.</p>
+        </div>
+        <div data-aos="zoom-in" data-aos-delay="400">
+          <h2>Business Insights</h2>
+          <p>Analyze KPIs & trends to support strategies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects Section ===== -->
+  <section id="projects">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="projects-grid">
+        <div class="project-card" data-aos="flip-left"><img src="images/dashboard1.PNG"><h3>Marketing KPI</h3><p>Sales performance tracking.</p></div>
+        <div class="project-card" data-aos="flip-left" data-aos-delay="200"><img src="images/dashbaord2.jpg"><h3>Sales Dashboard</h3><p>Employee performance insights.</p></div>
+        <div class="project-card" data-aos="flip-left" data-aos-delay="400"><img src="images/dashboard3.PNG"><h3>HR Analytics</h3><p>Employee trends & retention.</p></div>
+        <div class="project-card" data-aos="flip-left"><img src="images/dashboard4.jpg"><h3>Finance Dashboard</h3><p>Profit & expense analysis.</p></div>
+        <div class="project-card" data-aos="flip-left" data-aos-delay="200"><img src="images/dashboard5.jpg"><h3>Customer Insights</h3><p>Behavioral analytics.</p></div>
+        <div class="project-card" data-aos="flip-left" data-aos-delay="400"><img src="images/dashboard6.PNG"><h3>Operations</h3><p>Process efficiency KPIs.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact Form Section ===== -->
+  <section id="contact">
+    <div class="container">
+      <h1 class="sub-title">Drop Me a Message</h1>
+      <p class="contact-tagline">Let’s connect! Whether it’s work, ideas, or just networking — reach out anytime.</p>
+      <div class="row contact-row">
+        <!-- Left column with info -->
+        <div class="contact-left" data-aos="fade-right">
+          <p><i class="fas fa-envelope"></i> sammanmumtaz55@gmail.com</p>
+          <p><i class="fas fa-phone"></i> +92-300-61485212</p>
+          <!-- social icons -->
+          <div class="social-icons">
+            <a href="linkedin.com/in/samman-mumtaz-45b451380"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/samman_mumtaz?utm_source=qr&igsh=MW8xaGIzZGYzOWV6NQ=="><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/qr/6TLGOJ4A7EDIG1"><i class="fab fa-whatsapp"></i></a>
+          </div>
+          <a href="cV.pdf" download class="btn">Download CV</a>
+        </div>
+
+        <!-- Right column with form -->
+        <div class="contact-right" data-aos="fade-left">
+          <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/samman_mumtaz?utm_source=qr&igsh=MW8xaGIzZGYzOWV6NQ=="><i class="fab fa-instagram"></i></a>
+        <a href="linkedin.com/in/samman-mumtaz-45b451380"><i class="fab fa-linkedin"></i></a>
+        <a href="https://wa.me/qr/6TLGOJ4A7EDIG1"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <p>&copy; 2025 Samman Mumtaz | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- ===== Scripts ===== -->
+  <script>
+    // Tabs
+    const tablinks = document.getElementsByClassName("tab-links");
+    const tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+      for (let tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    // Navbar Toggle (open/close)
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector("#nav-links");
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll("#nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+      });
+    });
+  </script>
+
+  <script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbxE6QOCTUqNU274_dtdMBRNyNyAD8k_Os8sAalxuoiUJIlMd1XIJobb6MxO26HRFZCIbQ/exec";
+    const form = document.querySelector("#contact form");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const formData = new FormData(form);
+      fetch(scriptURL, { method: "POST", body: formData })
+        .then(response => response.json())
+        .then(data => {
+          alert("✅ Message sent successfully!");
+          form.reset();
+        })
+        .catch(error => {
+          console.error("Error!", error.message);
+          alert("❌ Error sending message. Please try again.");
+        });
+    });
+  </script>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>
